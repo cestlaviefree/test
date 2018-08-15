@@ -1,0 +1,23 @@
+h1{
+    font: 700;
+    font-size: 30px;
+}
+h2{
+    font: 700;
+    font-size: 24px;
+}
+dd,dt{
+    font-size: 12px;
+    margin-left: 0;
+    line-height: 2;
+}
+dt{
+    font-weight: 700;
+    margin-right: 10px;
+}
+dd{
+    margin-right: 40px;
+}
+.inlineList{
+    display: inline-block;
+}
