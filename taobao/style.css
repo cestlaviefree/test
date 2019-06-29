@@ -3,6 +3,9 @@
     padding: 0;
     list-style: none;
 }
+a{
+    text-decoration-line: none;
+}
 body{
     background-color: #f4f4f4;
     color: #3c3c3c;
@@ -45,6 +48,8 @@ body{
 }
 .tbh-nav{
     height: 30px;
+    line-height: 30px;
+    color: #fff;
 }
 .tb-bg{
     background: linear-gradient(to right,#ff9000,#ff5000);
@@ -52,4 +57,11 @@ body{
 .screen-outer{
     width: 990px;
     height: 690px;
+}
+.tbh-nav h2{
+    float: left;
+    width: 190px;
+    text-align: center;
+    font-size: 16px;
+    background: #ff5000;
 }
