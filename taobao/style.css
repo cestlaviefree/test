@@ -102,8 +102,81 @@ body{
     overflow: hidden;
     margin-left: 22px; 
 }
-.tbh-serach{
-    margin-left: 218px;
-    margin-right: 145px;
+.tbh-search{
+    margin-left: 258px;
+    margin-right: 302px;
     position: relative; 
+}
+.tbh-search .search-tab{
+    float: left;
+    margin-right: 4px;
+    color: #f40;
+    width: 36px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;  
+}
+.tbh-search .search-tab.selected{
+    background: linear-gradient(to right,#ff9000,#ff5000);
+    border-radius: 6px 6px 0 0/ 6px 6px 0 0;
+    color: #fff;
+    font-weight: 700;
+}
+.search-bd ul{
+    margin-left: 17px;
+    height: 22px;
+}
+
+.btn-search{
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    width: 74px;
+    height: 40px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+}
+.search-panel-fields{
+    margin-right: 74px;
+    height: 36px;
+    border: 2px solid #ff5000;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.screen-outer{
+    width: 1190px;
+    margin: 0 auto;
+    height: 632px;
+}
+.screen-outer .main{
+    float: left;
+    width: 900px;
+    height: 100%;
+}
+.screen-outer .col-right{
+    float: right;
+    width: 290px;
+    height: 100%;
+    margin-top: 10px;
+}
+.clear-fix::after,.clear-fix::before{
+    clear: both;
+}
+.tbh-service{
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 522px;
+    font-size: 14px;
+}
+.service-bd{
+    border: 1px solid #ff5000;
+    border-top: none;
+    padding: 5px 0 3px 0; 
+    background-color: #fff;
 }
