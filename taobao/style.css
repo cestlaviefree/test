@@ -5,6 +5,7 @@
 }
 a{
     text-decoration-line: none;
+    color: inherit;
 }
 body{
     background-color: #f4f4f4;
@@ -88,6 +89,15 @@ body{
     color: inherit;
     font-weight: 700;
 }
+.tbh-nav .nav-bd li::before{
+    content: '\E606';
+    font-family: iconfont;
+    color: #FF5000;
+    top: -19px;
+    position: absolute;
+    margin: -15px;
+    left: 50%;
+}
 .tbh-logo{
     float: left;
     width: 190px;
@@ -165,7 +175,9 @@ body{
     margin-top: 10px;
 }
 .clear-fix::after,.clear-fix::before{
+    display: block;
     clear: both;
+    content: " ";
 }
 .tbh-service{
     position: relative;
@@ -179,4 +191,85 @@ body{
     border-top: none;
     padding: 5px 0 3px 0; 
     background-color: #fff;
+}
+.service-bd li{
+    padding: 0 19px 0 25px;
+    height: 32px;
+    line-height: 32px;
+    width: 145px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+}
+.service-bd li:hover{
+    color: #ff3f00;
+    background: #ffe3db;
+}
+.service-bd i{
+    position: absolute;
+    right: 10px;
+}
+.service-float{
+    width: 692px;
+    height: 518px;
+    border: 2px solid #f94a14;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 188px;
+    box-shadow: 2px 2px 0 #dcdadb;
+    display: none;
+}
+.core{
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    height: 512px;
+    width: 520px;
+}
+.tbh-promo{
+    width: 520px;
+    height: 280px;
+    overflow: hidden;
+    background-color: #aaa;
+    position: relative;
+}
+.tbh-tmall{
+    width: 520px;
+    height: 230px;
+    margin-top: 1px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff; 
+}
+.sub-column{
+    float: right;
+    width: 160px;
+    height: 512px;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+}
+.sub-column .tbh-focus{
+    height: 280px;
+    background-color: blue;
+}
+.sub-column .hb-tanx{
+    height: 230px;
+    margin-top: 1px;
+    background-color: purple;
+}
+.tbh-headline{
+    width: 890px;
+    height: 100px;
+    background-color: #fff;
+    margin-top: 10px;
+    
+}
+.col-right{
+    width: 890px;
+    height: 100px;
+    background-color: #555;
+
 }
