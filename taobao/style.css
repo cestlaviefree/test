@@ -83,6 +83,7 @@ body{
 .tbh-nav .nav-bd li{
     font-size: 14px;
     margin-left: 7px; 
+
 }
 .tbh-nav .nav-bd li a{
     padding: 0 5px;
@@ -171,8 +172,9 @@ body{
 .screen-outer .col-right{
     float: right;
     width: 290px;
-    height: 100%;
+    height: 624px;
     margin-top: 10px;
+    background-color: #fff;
 }
 .clear-fix::after,.clear-fix::before{
     display: block;
@@ -261,15 +263,254 @@ body{
     background-color: purple;
 }
 .tbh-headline{
-    width: 890px;
-    height: 100px;
+    width: 856px;
+    height: 75px;
     background-color: #fff;
     margin-top: 10px;
-    
+    padding: 14px 14px 12px 20px;
+    position: relative;
 }
+.tbh-headline .headline-hd{
+    width: 180px;
+    height: 73px;
+    float: left;
+    background: url(http://img.alicdn.com/tfs/TB1KbhkbUgQMeJjy0FeXXXOEVXa-129-26.png) 0 14px no-repeat;
+}
+.tbh-headline .headline-hd p{
+    margin-top: 42px;
+    line-height: 24px;
+    height: 24px;
+    color: #999;
+    font-weight: 400;
+}
+.tbh-headline .more{
+    position: absolute;
+    top: 14px;
+    right: 16px;
+}
+.headline-bd{
+    height: 73px;
+    width: 676px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 180px;
+}
+.headline-bd .slide{
+    position: absolute;
+    height: 219px;
+    top: 0px;
+    transform: translateY(-73px);
+    transition-duration: 0.3s;
+}
+.headline-bd .slide .mod{
+    height: 73px;
+    width: 676px;
+}
+.headline-bd a{
+    display: block;
+    height: 73px;
+}
+.headline-bd .mod img{
+    float: left;
+    height: 73px;
+    width: 130px;
+} 
+.headline-bd .mod h4{
+    margin-top: 2px;
+    margin-left: 144px;
+    color: #333;
+    height: 28px;
+    display: block;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.headline-bd .mod p{
+    margin-left: 144px;
+
+}
+
 .col-right{
     width: 890px;
     height: 100px;
-    background-color: #555;
 
+}
+.tbh-member{
+    width: 290px;
+    height: 145px;
+}
+.tbh-tipoff{
+    text-align: center;
+    color: #f40;
+    background: #ffe4dd;
+    line-height: 26px;
+    height: 26px;
+    position: relative;
+}
+.tbh-tipoff .triangle{
+    border: solid;
+    border-width: 5px 0 5px 7px;
+    border-color:transparent transparent transparent #f40; 
+    display: block;
+    position: absolute;
+    right: 35px;  
+    top: 9px;
+}
+.tbh-notice .notice-hd{
+    position: relative;
+    height: 24px;
+    margin-top: 4px;
+    margin-right: -2px;
+    padding: 0 8px;
+}
+.notice-hd li{
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    width: 32px;
+    margin: 0 11px;
+}
+.notice-hd .selected{
+    padding: 0;
+    font-weight: 700;
+    border-bottom: 2px solid #f40;
+}
+.notice-bd .mod{
+    height: 50px;
+    overflow: hidden;
+    padding: 9px 0 6px 0;
+    margin: 0 12px;
+}
+.hidden{
+    display: none;
+}
+.notice-bd .mod li{
+    float: left;
+    width: 130px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.conve-list{
+    border-top: 1px solid #f4f4f4;
+    width: 294px;
+}
+.conve-list .mod{
+    float: left;
+    width: 71px;
+    height: 75px;
+    border: 1px solid #f4f4f4;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    text-align: center;
+}
+.conve-list span{
+    background: url(https://img.alicdn.com/tfs/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png) 0 0 no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 11px;
+}
+.conve-list p{
+    line-height: 24px;
+}
+.conve-list .conve-item-1 span{
+    background-position-y: 0;
+}
+.conve-list .conve-item-2 span{
+    background-position-y: -87px;
+}
+.conve-list .conve-item-3 span{
+    background-position-y: -44px;
+}
+.conve-list .conve-item-4 span{
+    background-position-y: -132px;
+}
+.conve-list .conve-item-5 span{
+    background-position-y: -176px;
+}
+.conve-list .conve-item-6 span{
+    background-position-y: -220px;
+}
+.conve-list .conve-item-7 span{
+    background-position-y: -264px;
+}
+.conve-list .conve-item-8 span{
+    background-position-y: -308px;
+}
+.conve-list .conve-item-9 span{
+    background-position-y: -352px;
+}
+.conve-list .conve-item-10 span{
+    background-position-y: -396px;
+}
+.conve-list .conve-item-11 span{
+    background-position-y: -440px;
+}
+.conve-list .conve-item-12 span{
+    background-position-y: -484px;
+}
+.tbh-app{
+    position: relative;
+    height: 110px;
+}
+.tbh-app h3{
+    font-size: 14px;
+    padding-left:14px;
+    height: 30px;
+    line-height: 30px; 
+}
+.tbh-app h3 a{
+    position: absolute;
+    right: 5px;
+}
+.apps-nav{
+    padding-left: 23px;
+}
+.apps-nav li{
+    position: relative;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-right:21px;
+    margin-bottom:8px;  
+}
+.apps-nav li span{
+    display: block;
+    width: 35px;
+    height: 32px;
+    background: url(image/appicon.png) 0 0 no-repeat;
+}
+.apps-nav .app-qr{
+    position: absolute;
+    top: -100px;
+    left: -25px;
+    display: none;
+}
+.apps-nav .app-icon2{
+    background-position: -53px 0;
+}
+.apps-nav .app-icon3{
+    background-position: -106px 0;
+}
+.apps-nav .app-icon4{
+    background-position: -159px 0;
+}
+.apps-nav .app-icon5{
+    background-position: -213px 0;
+}
+.apps-nav .app-icon6{
+    background-position: 0px -40px;
+}
+.apps-nav .app-icon7{
+    background-position: -53px -40px;
+}
+.apps-nav .app-icon8{
+    background-position: -106px -40px;
+}
+.apps-nav .app-icon9{
+    background-position: -159px -40px;
+}
+.apps-nav .app-icon10{
+    background-position: -212px -40px;
 }
