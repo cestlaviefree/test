@@ -1,118 +1,70 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+@import "reset.css";
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/iconfont.woff2') format('woff2'),
+        url('../font/iconfont.woff') format('woff'),
+        url('../font/iconfont.ttf') format('truetype'),
+        url('../font/iconfont.svg#iconfont') format('svg');
 }
-a{
-    text-decoration-line: none;
-    color: inherit;
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 12px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-body{
-    background-color: #f4f4f4;
-    color: #3c3c3c;
-    overflow-x: hidden;
-    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
-}
-.wrap1190{
-    width: 1190px;
-    margin: 0 auto;
-}
-.wrap990{
-    width: 990px;
-    margin: 0 auto;
-}
+/* 头部信息 */
 .header{
     height: 35px;
-    border-bottom: 1px solid rgb(239, 239, 239);
+    border-bottom: 1px solid #efefef;
     background-color: rgb(246, 246, 246); 
-}
-.header .header-l{
-    float: left;
-}
-.header .header-r{
-    float: right;
 }
 .header li{
     display: inline-block;
     line-height: 35px;
-}
-.header li div{
     padding: 0 6px;
 }
-.region{
+.header a,.region{
     margin-right: 7px;
 }
+.header a:hover,.hot{
+    color: #f40;
+}
+
+/* 搜索栏 */
 .search{
     background: #fff;
     padding-top: 24px;
     height: 97px;
 }
-.tbh-nav{
-    height: 30px;
-    line-height: 30px;
-    color: #fff;
-}
-.tb-bg{
-    background: linear-gradient(to right,#ff9000,#ff5000);
-}
-.screen-outer{
-    width: 990px;
-    height: 690px;
-}
-.tbh-nav h2{
-    float: left;
-    width: 190px;
-    text-align: center;
-    font-size: 16px;
-    background: #ff5000;
-}
-.tbh-nav ul,.tbh-nav li{
-    float: left;
-    color: #fff;
-}
-.tbh-nav .nav-hd li{
-    font-size: 16px;
-    margin: 0 3px;
-    padding: 0 4px;
-}
-.tbh-nav .nav-hd li a{
-    padding: 0 5px;
-    color: inherit;
-    font-weight: 700;
-}
-.tbh-nav .nav-bd li{
-    font-size: 14px;
-    margin-left: 7px; 
-
-}
-.tbh-nav .nav-bd li a{
-    padding: 0 5px;
-    color: inherit;
-    font-weight: 700;
-}
-.tbh-nav .nav-bd li::before{
-    content: '\E606';
-    font-family: iconfont;
-    color: #FF5000;
-    top: -19px;
-    position: absolute;
-    margin: -15px;
-    left: 50%;
-}
-.tbh-logo{
-    float: left;
-    width: 190px;
-    padding-top: 8px;
-}
 .logo-bd{
-    background: url(http://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png) 0 0 no-repeat;
-    width: 142px;
+    background: url(../image/logo.png) no-repeat;
     display: block;
-    padding-top: 59px; 
-    height: 0;
+    width: 145px;
+    height: 65px;
+    text-indent: -9999px;
     overflow: hidden;
-    margin-left: 22px; 
+    position: relative;
+    top: 6px;
+    left: 25px;
 }
+.search .code{
+    right: 30px;
+    top: -10px;
+    position: relative;
+}
+.search .code img{
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+.search .code span{
+    text-align: center;
+    display: block;
+}
+/* 搜索控件 */
 .tbh-search{
     margin-left: 258px;
     margin-right: 302px;
@@ -158,12 +110,99 @@ body{
     border-right: none;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    position: relative;
+    color: #9b9b9b;
 }
-.screen-outer{
-    width: 1190px;
-    margin: 0 auto;
-    height: 632px;
+#search-panel{
+    width: 300px;
+    padding: 10px 0;
+    border: none;
+    margin-left: 10px;
+    background-color: transparent;
+    outline: none;
+    position: absolute;
+    z-index: 2;
 }
+.search-panel-fields .placeholder{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.search-panel-fields .iconfont{
+    font-size: 20px;
+}
+.search-panel-fields .placeholder span{
+    vertical-align: 4px;
+}
+.search-panel-fields .camera{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.search .hotKey a:hover{
+    color: #F40;
+}
+
+/* 导航栏 */
+.tbh-nav{
+    line-height: 30px;
+    color: #fff;
+}
+.tb-bg{
+    background: linear-gradient(to right,#ff9000,#ff5000);
+}
+
+.tbh-nav h2{
+    float: left;
+    width: 190px;
+    text-align: center;
+    font-size: 16px;
+    background: #ff5000;
+}
+.tbh-nav ul,.tbh-nav li{
+    float: left;
+    color: #fff;
+}
+.tbh-nav li{
+    position: relative;
+}
+.tbh-nav .nav-hd li{
+    font-size: 16px;
+    margin: 0 3px;
+    padding: 0 4px;
+}
+.tbh-nav li:hover::before{
+    content: "";
+    display: block;
+    background: url(../image/taohead.png)  no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -15px;
+}
+.tbh-nav .nav-hd li a{
+    padding: 0 5px;
+    color: inherit;
+    font-weight: 700;
+}
+.tbh-nav .nav-bd li{
+    font-size: 14px;
+    margin-left: 7px; 
+
+}
+.tbh-nav .nav-bd li a{
+    padding: 0 5px;
+    color: inherit;
+    font-weight: 700;
+}
+
+
+/* 导航屏 */
+
+
 .screen-outer .main{
     float: left;
     width: 900px;
@@ -176,11 +215,7 @@ body{
     margin-top: 10px;
     background-color: #fff;
 }
-.clear-fix::after,.clear-fix::before{
-    display: block;
-    clear: both;
-    content: " ";
-}
+
 .tbh-service{
     position: relative;
     float: left;
@@ -203,10 +238,17 @@ body{
     font-size: 14px;
     font-weight: 400;
     overflow: hidden;
+    transition: all 0.3s;
 }
 .service-bd li:hover{
     color: #ff3f00;
     background: #ffe3db;
+}
+.service-bd li:hover a{
+    color: #ff3f00;
+}
+.service-bd a:hover{
+    text-decoration: underline;
 }
 .service-bd i{
     position: absolute;

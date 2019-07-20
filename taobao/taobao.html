@@ -5,45 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>淘宝网-淘！我喜欢</title>
-    <link href="https://img.alicdn.com/tps/i3/T1OjaVFl4dXXa.JOZB-114-114.png" rel="icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
     
 </head>
 <body>
     <div class="header">
-        <div class="wrap1190">
-            <ul class="header-l">
+        <div class="wrap1190 clearfix">
+            <ul class="fl">
                 <li>
-                    <div>
-                        <span class="region">中国大陆</span>
-                        <span>ˇ</span>
-                    </div>
+                    <span class="region">中国大陆</span><span class="iconfont">ˇ</span>
+                    <!-- 地区复选栏 -->
                     <div></div>
                 </li>
                 <li>
-                    <div>
-                        <a href="#">请，请登入</a>
-                        <a href="#">免费注册</a>
-                    </div>
+                    <a href="#" class="hot">请，请登入</a><a href="#">免费注册</a>
                 </li>
                 <li>
-                    <div>
-                        <a href="#">手机逛淘宝</a>
-                    </div>
+                    <a href="#">手机逛淘宝</a>
                 </li>
             </ul>
-            <ul class="header-r">
+            <ul class="fr">
                 <li class="mytaobao">
-                    <div><a href="#">我的淘宝</a><span>ˇ</span></div>
+                    <a href="#">我的淘宝</a><span>ˇ</span>
                     <!-- 购物记录 -->
                     <div></div> 
                 </li>
                 <li>
-                    <div><a href="#"><span></span><span>购物车</span></a></div>
-                    <div></div>
+                    <a href="#"><span class="iconfont hot">&#xe6b8;</span><span>购物车</span></a><span>ˇ</span>                   <div></div>
                 </li>
                 <li>
-                    <div><a href="http://"><span>⭐</span><span>收藏夹</span></a><span>ˇ</span></div>
+                    <a href="#"><span class="iconfont">&#x3432;</span><span>收藏夹</span></a><span>ˇ</span>
+                    <!-- 收藏夹悬浮 -->
                     <div></div>
                 </li>
                 <li>
@@ -51,27 +44,34 @@
                 </li>
                 <li>|</li>
                 <li>
-                    <div><a href="#"><span>千牛卖家中心</span></a><span>ˇ</span></div>
+                    <a href="#"><span>千牛卖家中心</span></a><span>ˇ</span>
+                    <!-- 千牛卖家悬浮 -->
                     <div></div>
                 </li>
                 <li>
-                    <div><a href="#"><span>联系客服</span></a><span>ˇ</span></div>
+                    <a href="#"><span>联系客服</span></a><span>ˇ</span>
+                    <!-- 联系客服悬浮 -->
                     <div></div>
                 </li>
                 <li>
-                    <div><a href="#"><span></span><span>网站导航</span></a><span>ˇ</span></div>
+                    <a href="#"><span class="iconfont hot">&#xe653;</span><span>网站导航</span></a><span>ˇ</span>
+                    <!-- 网站导航悬浮 -->
                     <div></div>
                 </li>
                     
             </ul>
         </div>
     </div>
-    <div class="search">
+    <div class="search clearfix">
         <div class="wrap1190">
-            <div class="tbh-logo">
+            <div class="tbh-logo fl">
                 <h1>
                     <a class="logo-bd" href="">淘宝网</a>
                 </h1>
+            </div>
+            <div class="code fr">
+                <span class="c4">手机淘宝</span>
+                <img src="image/code.png" alt="">
             </div>
             <div class="tbh-search">
                 <div class="search-bd">
@@ -82,15 +82,35 @@
                     </ul>
                     <form action="" method="get">
                         <button class="btn-search tb-bg" type="submit">搜索</button>
-                        <div class="search-panel-fields"></div>
+                        <div class="search-panel-fields">
+                            <input type="text" id="search-panel">
+                            <div class="placeholder">
+                                <i class="iconfont">&#xe68f;</i>
+                                <span>可以玩的手机壳</span>
+                            </div>
+                            <i class="iconfont camera">&#xe787;</i>
+                        </div>
                     </form>
                 </div>
-                <div class="search-ft"></div>
+                <div class="hotKey">
+                    <a href="#">百叶窗</a>
+                    <a href="#">除甲醛</a>
+                    <a href="#">扫地机器人</a>
+                    <a href="#">吹风机</a>
+                    <a href="#">时尚连衣裙</a>
+                    <a href="#">男士T恤</a>
+                    <a href="#">蓝牙耳机</a>
+                    <a href="#">沙发</a>
+                    <a href="#">风扇</a>
+                    <a href="#">男士内裤</a>
+                    <a href="#">定制窗帘</a>
+                    <a href="#">吊灯</a>
+                    <a href="#">办公桌</a>
+                </div>
             </div>
-            <div class="tbh-qr-wrapper"></div>
         </div>
     </div>
-    <div class="tbh-nav tb-bg">
+    <div class="tbh-nav tb-bg clearfix">
         <div class="wrap1190">
             <h2>主题市场</h2>
             <ul class="nav-hd">
@@ -114,133 +134,73 @@
             </ul>
         </div>
     </div>
-    <div class="screen-outer">
-        <div class="main">
-            <div class="main-inner clear-fix">
+    <div class="screen-outer wrap1190 clearfix">
+        <div class="main fl">
+            <div class="main-inner clearfix">
                 <div class="tbh-service">
                     <ul class="service-bd">
                         <li>
-                            <a href="">女装</a>&nbsp;/&nbsp;<a href="">男装</a>&nbsp;/&nbsp;<a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                         <li>
-                            <a href="">女装</a>
-                            /
-                            <a href="">男装</a>
-                            /
-                            <a href="">内衣</a>
+                            <a href="">女装</a> / <a href="">男装</a> / <a href="">内衣</a>
                             <i tb-ifont>›</i>
                         </li>
                     </ul>
@@ -294,16 +254,16 @@
                 </div>
             </div>
         </div>
-        <div class="col-right">
+        <div class="col-right fr">
             <div class="tbh-member">
                 <div class="member-bd"></div>
                 <div class="member-ft"></div>
             </div>
-            <div class="tbh-tipoff clear-fix">
+            <div class="tbh-tipoff clearfix">
                 <a href="">网上有害信息举报专区</a>
                 <span class="triangle"></span>
             </div>
-            <div class="tbh-notice clear-fix">
+            <div class="tbh-notice clearfix">
                 <ul class="notice-hd">
                     <li class="selected"><a href="">公告</a></li>
                     <li><a href="">规则</a></li>
