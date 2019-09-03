@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            outline: none;
+            background: #464;
+        }
+        canvas{
+            background: #c9c;
+            display: block;
+            margin: 0 auto;
+            padding: 20px auto;
+            border: 1px solid #8f63cc;
+            margin-top: 10px;
+
+        }
+        .title{
+            color: #00c;
+            text-align: center;
+            font-size: 30px;
+            background: #cfc;
+            width: 480px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .start{
+            color: #00c;
+            text-align: center;
+            font-size: 24px;
+            background: #cfc;
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        strong{
+            color: #00c;
+            text-align: center;
+            font-size: 24px;
+            
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 20px;
+            display: block;
+        }
+    </style>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <div class="title">撞球游戏</div>
+    <canvas id="bricksCanvas" width="480" height="460"></canvas>
+    <div class="start" flage="flage">开始游戏</div>
+    <strong>空格暂停</strong>
+    <!-- <script src="script.js"></script> -->
+    <script src="myscript.js"></script>
+</body>
+</html>
